@@ -27,7 +27,7 @@ const Navbar = ({ onSearch }) => {
           <div className="bg-red-600 p-0.5 rounded-lg">
             <svg viewBox="0 0 24 24" className="w-6 h-6 fill-white"><path d="M10 15l5.19-3L10 9v6z"></path></svg>
           </div>
-          <span className="text-xl font-bold tracking-tighter">YouTube</span>
+          <span className="text-xl font-bold tracking-tighter">NovaTube</span>
         </div>
       </div>
 

@@ -1,17 +1,66 @@
-# React + Vite
+# 📺 NovaTube - YouTube Style Video Listing UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+NovaTube is a professional, high-performance video listing interface built with React and Tailwind CSS. It leverages the FreeAPI YouTube endpoint to provide a real-world video browsing experience with features like category filtering, live search, and seamless pagination.
 
-Currently, two official plugins are available:
+![NovaTube Preview](https://via.placeholder.com/1200x600/0f0f0f/ffffff?text=NovaTube+Video+Listing+UI)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- **Live Data Integration**: Fetches real video data (thumbnails, titles, view counts, and timestamps) from the YouTube API via FreeAPI.
+- **Dynamic Search**: Instantly search for any video across the platform using the global search bar.
+- **Category Filtering**: Quick-access filters for popular topics like Programming, Gaming, Music, and more.
+- **Modern UI/UX**:
+  - **Dark Mode**: Sleek `#0f0f0f` background for a premium feel.
+  - **Responsive Grid**: Adapts from mobile to ultra-wide desktop views.
+  - **Loading Skeletons**: Smooth pulse animations for a better perceived performance.
+  - **Smooth Navigation**: Auto-scroll to top on page or category changes.
+- **Direct Video Playback**: Each video card links directly to the actual YouTube video in a new tab.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technology Stack
 
-## Expanding the ESLint configuration
+- **Frontend**: React 19, Vite
+- **Styling**: Tailwind CSS (v4)
+- **API**: [FreeAPI YouTube Endpoint](https://api.freeapi.app/api/v1/public/youtube/videos)
+- **State Management**: React Hooks (useState, useEffect)
+- **Icons**: SVG-based custom icons for maximum performance.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# NovaTube
+## Project Structure
+
+```text
+src/
+├── components/     # Modular UI components (Navbar, Sidebar, Card, etc.)
+├── hooks/          # Custom hooks for API integration (useVideos)
+├── utils/          # Utility functions for formatting
+├── App.jsx         # Main application logic
+└── index.css       # Global styles and Tailwind configuration
+```
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/babitakry/NovaTube.git
+   cd NovaTube
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
